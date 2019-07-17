@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Socks Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+    <div class="nav-bar"></div>
+    <div id="app">
+        <div class="cart-wrap">
+            <p class="cart">Cart({{cart.length}})</p>
+        </div>
+         <product :premium="premium" @add-to-cart-event-name="updateCart"  @clear-cart-event-name="removeItem"></product>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
